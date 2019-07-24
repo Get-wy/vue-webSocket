@@ -68,11 +68,6 @@ export default {
       // if (e.data == '连接成功') {//这个判断是我业务需求才加的
       //   return
       // }
-      //业务需求，将socket接收到的值存进vuex
-      // _this.$store.store.dispatch('RESET_ID') 
-      //先调用reset方法置空vuex > store里面的scorketId（为什么置空，下面标题3解释）
-      // _this.$store.store.dispatch('SAVE_ID', JSON.parse(e.data).areaId) //重新给store中的scorketId赋值（数据格式问题先转了json）
-      // console.log(_this.$store.store.state.scorketId);
     },
     websocketsend(Data){//数据发送
       this.websock.send(Data)
